@@ -11,7 +11,7 @@ header {
 #logo {
     font-weight: bold;
     font-size: 1.7rem;
-    color: limegreen;
+    color: #fff;
 }
 
 nav {
@@ -28,14 +28,14 @@ nav {
 ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 }
 
 a {
     text-decoration: none;
     font-size: 20px;
-    color: limegreen;
+    color: #fff;
     padding: 1rem;
     transition: all .4s linear;
 }
@@ -45,3 +45,42 @@ a:hover {
     margin-bottom: 1px solid limegreen;
 }
 
+section {
+    min-height: 100vh;
+
+}
+
+#banner img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#artes {
+    background-color: #333;
+}
+
+#modalidades {
+    background-color: limegreen;
+}
+
+#planos {
+    background-color: #333;
+}
+
+#contato {
+    background-color: limegreen;
+}
+
+
+footer {
+    background-color: darkslategrey;
+    padding: 3rem;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
