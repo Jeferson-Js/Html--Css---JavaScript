@@ -1,63 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all .4s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .form {
-    background-color: #333;
-    width: min-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 60px;
-    border-radius: 22px;
-    width: min-content;
-    box-shadow: 0 2px 2px gainsboro;
+  background-color: #333;
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  border-radius: 22px;
+  width: min-content;
+  box-shadow: 0 2px 2px gainsboro;
+  animation: iniciar 1.4s ease-in-out;
+  pointer-events: all;
 }
 
 h1 {
-    text-align: center;
-    color: limegreen;
+  text-align: center;
+  color: limegreen;
+}
+
+label {
+  color: #fff;
+  font-size: 20px;
 }
 
 .input {
-    border: 1px solid limegreen;
-    border-radius: 22px;
-    padding: 10px;
-    width: 280px;
+  border: 1px solid limegreen;
+  border-radius: 22px;
+  padding: 10px;
+  min-width: 280px;
+  margin-bottom: 1rem;
 }
 
 .input input {
-    border: none;
-    outline: none;
-    font-size: 1.1em;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 22px;
+  padding: 2px;
+  background-color: transparent;
+  color: limegreen;
+  cursor: pointer;
 }
 
 .input i {
-    font-size: 1rem;
-    color: limegreen;
-    left: 2rem;
-    transform: translateY(10%);
+  position: absolute;
+  cursor: pointer;
+  font-size: 1rem;
+  color: limegreen;
+  padding-left: 15rem;
+  transform: translateY(16%);
+  display: flex;
+  align-items: center;
+
 }
 
-.btn-submit button{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    width: 160px;
-    font-weight: bold;
-    border-radius: 25px;
-    border: none;
+.btn-submit button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  width: 160px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  color: limegreen;
 }
-
 
 button:hover {
-    background-color: limegreen;
-    color: #fff;
+  background-color: limegreen;
+  color: #fff;
+}
+
+
+/*Animation by form*/
+
+@keyframes iniciar {
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
 }
