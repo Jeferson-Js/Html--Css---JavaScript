@@ -58,12 +58,11 @@ label {
   position: absolute;
   cursor: pointer;
   font-size: 1rem;
-  color: limegreen;
+  color: #fff;
   padding-left: 15rem;
-  transform: translateY(16%);
+  transform: translateY(5px);
   display: flex;
   align-items: center;
-
 }
 
 .btn-submit button {
@@ -85,19 +84,30 @@ button:hover {
   color: #fff;
 }
 
-
 /*Animation by form*/
 
 @keyframes iniciar {
-    0%{
-        top: -20%;
-        opacity: 0;
-        pointer-events: none;
-    }
+  0% {
+    top: -20%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    top: 50%;
+    opacity: 100%;
+    pointer-events: all;
+  }
+}
 
-    100% {
-        top: 50%;
-        opacity: 100%;
-        pointer-events: all;
-    }
+@media (min-width: 375px) {
+  .form {
+    background-color: darkslategrey;
+  }
+  h1 {
+    color: #fff;
+    cursor: pointer;
+  }
+  .title {
+    color: darkslategrey;
+  }
 }
