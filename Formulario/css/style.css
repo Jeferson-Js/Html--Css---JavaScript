@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .4s linear;
+}
+
+.form {
+    background-color: #333;
+    width: min-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 22px;
+    width: min-content;
+    box-shadow: 0 2px 2px gainsboro;
+}
+
+h1 {
+    text-align: center;
+    color: limegreen;
+}
+
+.input {
+    border: 1px solid limegreen;
+    border-radius: 22px;
+    padding: 10px;
+    width: 280px;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.input i {
+    font-size: 1rem;
+    color: limegreen;
+    left: 2rem;
+    transform: translateY(10%);
+}
+
+.btn-submit button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    width: 160px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+}
+
+
+button:hover {
+    background-color: limegreen;
+    color: #fff;
+}
