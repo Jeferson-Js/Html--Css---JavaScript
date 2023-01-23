@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
     <header>
@@ -13,7 +14,6 @@
         <a href="#" id="logo">Academia</a>
         <ul>
           <li><a href="#artes">Artes</a></li>
-          <li><a href="#modalidades">Modalidades</a></li>
           <li><a href="#planos">Planos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -27,56 +27,99 @@
       <section id="artes">
         <div class="artes-container">
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Muay Thai" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Muay Thai"
+              class="foto"
+            />
             <h3>Muay Thai</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore .
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore .
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Boxe" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Boxe"
+              class="foto"
+            />
             <h3>Boxe</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore .
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore .
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="MMA" class="foto">
+            <img src="https://via.placeholder.com/150" alt="MMA" class="foto" />
             <h3>MMA</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore .
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore .
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Jiu Jitsu" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Jiu Jitsu"
+              class="foto"
+            />
             <h3>Jiu Jitsu</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore .
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore .
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Capoira" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Capoira"
+              class="foto"
+            />
             <h3>Capoeira</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Capoira" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Capoira"
+              class="foto"
+            />
             <h3>Pilates</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Capoira" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Capoira"
+              class="foto"
+            />
             <h3>Funcional</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore
             </p>
           </div>
           <div class="caixa">
-            <img src="https://via.placeholder.com/150" alt="Capoira" class="foto">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Capoira"
+              class="foto"
+            />
             <h3>Natação</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              tempore
             </p>
           </div>
         </div>
       </section>
-      <section id="modalidades"></section>
       <section id="planos">
         <div class="container">
           <div class="box">
@@ -111,7 +154,46 @@
           </div>
         </div>
       </section>
-      <section id="contato"></section>
+      <section id="contato">
+        <div class="form">
+          <form action="#">
+            <h2>Cadastrar</h2>
+            <label for="nome">Nome</label>
+            <div class="input">
+              <i class="ph-user"></i>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Digite o seu nome"
+                required
+              />
+            </div>
+            <label for="email">Email</label>
+            <div class="input">
+              <i class="ph-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="Digite o seu email"
+                required
+              />
+            </div>
+            <label for="senha">Senha</label>
+            <div class="input">
+              <i class="ph-lock"></i>
+              <input
+                type="password"
+                name="senha"
+                placeholder="Digite a sua senha"
+                required
+              />
+            </div>
+            <div class="btn">
+            <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Landing page desenvolvida por Oliveira.js &copy; janeiro de 2023.</p>

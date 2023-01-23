@@ -55,6 +55,7 @@ a:hover {
 section {
     min-height: 100vh;
     padding-top: 2rem;
+    width: 100%;
 
 }
 
@@ -108,12 +109,10 @@ p {
     text-align: center;
 }
 
-#modalidades {
-    background-color: limegreen;
-}
-
 #planos {
     background-color: #333;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 #planos .container {
@@ -180,6 +179,7 @@ box-shadow: lightgreen;
 
 
 footer {
+    width: 100%;
     background-color: darkslategrey;
     padding: 2rem;
 }
@@ -216,4 +216,47 @@ footer p {
     align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    z-index: 1;
+}
+
+.input {
+    min-width: 280px;
+    border-radius: 22px;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+    border: 1px solid darkslategrey;
+}
+
+.input i {
+    font-size:  1.2em;
+    padding: 5px;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    width: 80%;
+    transform: translateY(-20%);
+    font-size: 11px;
+}
+
+.btn {
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.btn button {
+    padding: 1rem;
 }
